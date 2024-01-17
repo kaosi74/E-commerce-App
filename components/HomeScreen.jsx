@@ -10,86 +10,9 @@ import {
 } from "react-native";
 import React from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import itemDetails from "../pages/card";
 
 export default function HomeScreen({ navigation }) {
-  const itemDetails = [
-    {
-      id: 1,
-      name: "Iphone XS Max",
-      price: "$682",
-      image: require("../assets/Apple-iPhone-11-PNG-Image.png"),
-      icon: "star",
-      reviews: "125 Reviews",
-      iconHalf: "star-half",
-      addIcon: "add-circle",
-      ratings: "This item is rated one of the best in town",
-    },
-    {
-      id: 2,
-      name: "Redmi note 12",
-      icon: "star",
-      iconHalf: "star-half",
-      addIcon: "add-circle",
-      image: require("../assets/redmi.jpg"),
-    },
-    {
-      id: 3,
-      name: "GamePad",
-      icon: "star",
-      iconHalf: "star-half",
-      addIcon: "add-circle",
-      image: require("../assets/laptop.jpg"),
-    },
-    {
-      id: 4,
-      name: "GamePad",
-      icon: "star",
-      iconHalf: "star-half",
-      addIcon: "add-circle",
-      image: require("../assets/headphone.jpg"),
-    },
-    {
-      id: 5,
-      name: "GamePad",
-      icon: "star",
-      iconHalf: "star-half",
-      addIcon: "add-circle",
-      image: require("../assets/headphone.jpg"),
-    },
-    {
-      id: 6,
-      name: "GamePad",
-      icon: "star",
-      iconHalf: "star-half",
-      addIcon: "add-circle",
-      image: require("../assets/headphone.jpg"),
-    },
-    {
-      id: 7,
-      name: "GamePad",
-      price: "$539",
-      icon: "star",
-      iconHalf: "star-half",
-      addIcon: "add-circle",
-      image: require("../assets/headphone.jpg"),
-    },
-    {
-      id: 8,
-      name: "GamePad",
-      icon: "star",
-      iconHalf: "star-half",
-      addIcon: "add-circle",
-      image: require("../assets/headphone.jpg"),
-    },
-    {
-      id: 9,
-      name: "GamePad",
-      icon: "star",
-      iconHalf: "star-half",
-      addIcon: "add-circle",
-      image: require("../assets/headphone.jpg"),
-    },
-  ];
   return (
     <SafeAreaView style={styles.safeView}>
       <ScrollView>
@@ -168,7 +91,7 @@ const styles = StyleSheet.create({
   button: {
     borderRadius: 10,
     paddingBottom: 10,
-    backgroundColor: "white",
+    backgroundColor: "cyan",
   },
   image: {
     width: 120,

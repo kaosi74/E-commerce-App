@@ -4,7 +4,7 @@ const itemDetails = [
     name: "Iphone XS Max",
     price: "$682",
     image: require("../assets/Apple-iPhone-11-PNG-Image.png"),
-    icon: "star",
+    icon: "car-outline",
     reviews: "125 Reviews",
     iconHalf: "star-half",
     addIcon: "add-circle",

@@ -13,11 +13,8 @@ export default function ItemDetailsScreen({ route }) {
         <View style={styles.reviewContainer}>
           <View style={styles.reviewItems}>
             <View style={styles.ratingIconContainer}>
-              <Ionicons name="star" color={"gold"} />
-              <Ionicons name="star" color={"gold"} />
-              <Ionicons name="star" color={"gold"} />
-              <Ionicons name="star-half" color={"gold"} />
-              <Ionicons name="star-outline" color={"gold"} />
+              <Ionicons name={item.icon} color={"gold"} />
+              <Ionicons name={item.iconHalf} color={"gold"} />
             </View>
             <Text style={styles.reviewText}>{item.reviews}</Text>
           </View>
